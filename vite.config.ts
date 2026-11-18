@@ -5,6 +5,7 @@ import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
+  input: ['index.html', '404.html'],
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
