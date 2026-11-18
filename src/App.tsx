@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button"
+import { SiteNav } from "./SiteNav"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
+    <div className="flex flex-col min-h-svh p-6 bg-[url('./assets/background.jpg')] bg-no-repeat bg-contain bg-center">
+      <SiteNav></SiteNav>
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         <div>
           <h1 className="font-medium">Hello World!</h1>
