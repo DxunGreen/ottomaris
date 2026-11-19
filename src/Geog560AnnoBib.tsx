@@ -24,16 +24,16 @@ for (let i = 0; i < 14; i++) {
 export function Geog560AnnoBib() {
   return (
     <SiteFrame>
-      <div className="flex flex-col gap-6 self-center bg-black px-20 py-10 max-w-350">
-        <h1 className="text-lg">Annotated Bibliography</h1>
-        <h2>Compiled by Jane Ottomaris Hedge for GEOG 560, Fall 2026, Oregon State University</h2>
+      <div className="flex flex-col gap-6 self-center bg-black px-10 md:px-20 py-10 max-w-300 rounded-sm">
+        <h1 className="text-lg text-center">Annotated Bibliography</h1>
+        <h2 className="text-lg text-center">Compiled by Jane Ottomaris Hedge for GEOG 560, Fall 2026, Oregon State University</h2>
         <ul className="flex flex-col gap-5">
         {entries.map((entry) => (
-          <li className="text-sm">
-            <b className="">{entry.citation} <a href={entry.link}>{entry.link}</a></b>
-            <div className="ms-10 mbs-2">
-              <p><b>Summary: </b>{entry.summary}</p>
-              <p className="mbs-2"><b>Relevance: </b>{entry.relevance}</p>
+          <li className="text-med">
+            <p className="">{entry.citation} <a href={entry.link}>{entry.link}</a></p>
+            <div className="ms-5 md:ms-10 mbs-2">
+              <p>Summary: <span className="text-muted-foreground">{entry.summary}</span></p>
+              <p className="mbs-2">Relevance: <span className="text-muted-foreground">{entry.relevance}</span></p>
             </div>
           </li>
         ))}

@@ -30,7 +30,7 @@ const headers: NavHeader[] = [
 
 export function SiteNav() {
   return (
-    <NavigationMenu className="flex-none bg-black mbe-5">
+    <NavigationMenu className="flex-none bg-black mbe-5 rounded-xs">
       <NavigationMenuList>
         <NavigationMenuItem className="flex">
           <ListItem 
