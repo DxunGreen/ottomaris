@@ -1,4 +1,4 @@
-# ottomaris.com - A personal professional website
+# [ottomaris.com](https://ottomaris.com) - A personal professional website
 
 This site is made with Vite using React, React Router, TypeScript, and shadcn/ui.
 
