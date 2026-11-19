@@ -30,9 +30,9 @@ const headers: NavHeader[] = [
 
 export function SiteNav() {
   return (
-    <NavigationMenu className="flex-none">
+    <NavigationMenu className="flex-none bg-black mbe-5">
       <NavigationMenuList>
-        <NavigationMenuItem className="hidden md:flex">
+        <NavigationMenuItem className="flex">
           <ListItem 
             key="Home"
             title="Home"
@@ -40,7 +40,7 @@ export function SiteNav() {
           ></ListItem>
         </NavigationMenuItem>
         {headers.map((header) => (
-          <NavigationMenuItem className="hidden md:flex">
+          <NavigationMenuItem className="flex">
             <NavigationMenuTrigger>{header.name}</NavigationMenuTrigger>
             <NavigationMenuContent>
               {header.items.map((item) => (
