@@ -31,8 +31,10 @@ export function Geog560AnnoBib() {
         {entries.map((entry) => (
           <li className="text-sm">
             <b className="">{entry.citation} <a href={entry.link}>{entry.link}</a></b>
-            <p><b>Summary: </b>{entry.summary}</p>
-            <p><b>Relevance: </b>{entry.relevance}</p>
+            <div className="ms-10 mbs-2">
+              <p><b>Summary: </b>{entry.summary}</p>
+              <p className="mbs-2"><b>Relevance: </b>{entry.relevance}</p>
+            </div>
           </li>
         ))}
         </ul>
