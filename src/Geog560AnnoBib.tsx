@@ -32,9 +32,10 @@ export function Geog560AnnoBib() {
     <SiteFrame>
       <div className="flex flex-col gap-5 self-center bg-black px-10 md:px-20 py-10 max-w-300 rounded-sm">
         <h1 className="text-lg text-center">Annotated Bibliography</h1>
-        <div>
-          <h2 className="text-lg text-center">Uses of GIS in Water Resource Management</h2>
-          <h3 className="text-sm text-center">Compiled by Jane Ottomaris Hedge for GEOG 560, Fall 2026, Oregon State University</h3>
+        <div className="text-center">
+          <h2 className="text-lg">Uses of GIS in Water Resource Management</h2>
+          <h3 className="text-sm">Compiled by Jane Ottomaris Hedge</h3>
+          <h3 className="text-sm">GEOG 560 GIScience I: Introduction to Geographic Information Science, Fall 2026, Oregon State University</h3>
         </div>
         <ul className="flex flex-col gap-5">
         {entries.map((entry) => (
